@@ -17,9 +17,9 @@ public class Ageneral extends config {
 	@Test
 	public void tc01(){
 		
-		boolean displayver[] = new boolean [8];
+		boolean displayver[] = new boolean [8]; // verification of all textfields & buttons displays.
 		
-		displayver[0] = displayverification(loc.locationfrom);
+		displayver[0] = displayverification(loc.locationfrom); 
 		displayver[1] = displayverification(loc.locationto);
 		displayver[2] = displayverification(loc.departdate);
 		displayver[3] = displayverification(loc.returndate);
