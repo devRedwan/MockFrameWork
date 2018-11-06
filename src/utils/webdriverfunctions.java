@@ -25,9 +25,10 @@ public class webdriverfunctions {
 		return driver.findElement(By.xpath(loc)).getAttribute("placeholder");
 	}
 	
-	public void displayverification (String loc){
+	public boolean displayverification (String loc){
 		
-		driver.findElement(By.xpath(loc)).isDisplayed();
+	    return driver.findElement(By.xpath(loc)).isDisplayed();
+		
 	}
 	
 }
