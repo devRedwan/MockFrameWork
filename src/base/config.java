@@ -6,9 +6,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 import utils.webdriverfunctions;
 
+@SuppressWarnings("unused")
 public class config extends webdriverfunctions {
 
 	String browser = "chrome"; // Browser opening decider
+	String hello = "hello";
 	
 	@BeforeTest
 	public void initialbrowsers(){

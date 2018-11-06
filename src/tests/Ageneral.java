@@ -8,6 +8,7 @@ import base.config;
 import locators.locators;
 import values.values;
 
+@SuppressWarnings("unused")
 public class Ageneral extends config {
 
 	locators loc = new locators();
