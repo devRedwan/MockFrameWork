@@ -3,12 +3,18 @@ package base;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+
+import locators.locators;
 import utils.webdriverfunctions;
 
+
+@SuppressWarnings("unused")
 public class config extends webdriverfunctions {
 
-	String browser = "chrome"; // Browser opening decider
+	locators loc = new locators();
+	String browser = "firefox"; // Browser opening decider
 	
 	@BeforeTest
 	public void initialbrowsers(){
@@ -29,10 +35,13 @@ public class config extends webdriverfunctions {
 		
 		}
 		
+		
 		driver.get("https://www.phptravels.net/"); // open the browser
 		driver.manage().window().maximize(); // after opening, maximize the window
 	//	driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.MILLISECONDS); // for loading pages with huge stress
-	//	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); // wait 30 seconds after maximizing to load all the necessary elements
+	//	driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS); // wait 30 seconds after maximizing to load all the necessary elements
+		xpathclick (loc.flightstab);
+		
 		
 	}
 	

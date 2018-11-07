@@ -8,9 +8,10 @@ public class webdriverfunctions {
 	protected WebDriver driver ; 
 	
 	
-	public void typebyxpath (String loc, String val){
+    public void typebyxpath(String loc, String value){
 		
-		driver.findElement(By.xpath(loc)).sendKeys(val);
+		driver.findElement(By.xpath(loc)).sendKeys(value);
+		
 		
 	}
 	
@@ -25,9 +26,10 @@ public class webdriverfunctions {
 		return driver.findElement(By.xpath(loc)).getAttribute("placeholder");
 	}
 	
-	public void displayverification (String loc){
+	public boolean displayverification (String loc){
 		
-		driver.findElement(By.xpath(loc)).isDisplayed();
+	    return driver.findElement(By.xpath(loc)).isDisplayed();
+		
 	}
 	
 }
