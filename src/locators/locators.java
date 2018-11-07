@@ -10,5 +10,6 @@ public class locators {
 	public String onewaybtn    = "//div[@role='tabpanel']/form/div[9]/div/div/div/input[@id='oneway']"; // one-way radio button under the 1st text-box
 	public String rndtrpbtn    = "//div[@role='tabpanel']/form/div[9]/div/div/div/input[@id='round']"; // round trip radio button next to one-way 
 	public String srchbtn      = "//*[@id='flights']/form/div[6]/button"; // search button all the way to the right 
+	public String flightstab   = "//div[@class='col-md-12']/ul/li[2]/a"; // flight tab xpath
 
 }

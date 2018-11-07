@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="mockframework">
+
+  <test name="tests">
+  
+    <classes>
+  
+      <class name="tests.Ageneral"/>   
+      <parameter name="tc01" value=""></parameter>
+  
+    </classes>
+  
+  </test>
+  
+</suite> 

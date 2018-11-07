@@ -8,9 +8,10 @@ public class webdriverfunctions {
 	protected WebDriver driver ; 
 	
 	
-	public void typebyxpath (String loc, String val){
+    public void typebyxpath(String loc, String value){
 		
-		driver.findElement(By.xpath(loc)).sendKeys(val);
+		driver.findElement(By.xpath(loc)).sendKeys(value);
+		
 		
 	}
 	

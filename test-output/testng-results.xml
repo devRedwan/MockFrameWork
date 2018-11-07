@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11382" started-at="2018-11-06T04:55:10Z" finished-at="2018-11-06T04:55:21Z">
+  <suite name="Default suite" duration-ms="20003" started-at="2018-11-07T12:30:04Z" finished-at="2018-11-07T12:30:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11382" started-at="2018-11-06T04:55:10Z" finished-at="2018-11-06T04:55:21Z">
+    <test name="Default test" duration-ms="20003" started-at="2018-11-07T12:30:04Z" finished-at="2018-11-07T12:30:24Z">
       <class name="tests.Ageneral">
-        <test-method status="PASS" signature="initialbrowsers()[pri:0, instance:tests.Ageneral@61832929]" name="initialbrowsers" is-config="true" duration-ms="10739" started-at="2018-11-06T04:55:10Z" finished-at="2018-11-06T04:55:21Z">
+        <test-method status="PASS" signature="initialbrowsers()[pri:0, instance:tests.Ageneral@523884b2]" name="initialbrowsers" is-config="true" duration-ms="18905" started-at="2018-11-07T12:30:04Z" finished-at="2018-11-07T12:30:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialbrowsers -->
-        <test-method status="PASS" signature="tc01()[pri:0, instance:tests.Ageneral@61832929]" name="tc01" duration-ms="616" started-at="2018-11-06T04:55:21Z" finished-at="2018-11-06T04:55:21Z">
+        <test-method status="PASS" signature="tc01()[pri:0, instance:tests.Ageneral@523884b2]" name="tc01" duration-ms="1062" started-at="2018-11-07T12:30:23Z" finished-at="2018-11-07T12:30:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc01 -->
