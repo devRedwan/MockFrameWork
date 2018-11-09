@@ -7,8 +7,8 @@
   
     <classes>
   
-      <class name="tests.Ageneral"/>   
-      <parameter name="tc01" value=""></parameter>
+      <class name="tests.Bfirst2textbox"/>   
+      <class name="tests.Cdepart"/>
   
     </classes>
   
