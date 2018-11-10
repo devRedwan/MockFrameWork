@@ -1,6 +1,7 @@
 package tests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.SkipException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -34,13 +35,15 @@ public class Bfirst2textbox extends config {
 	
 	@Test
 	public void tc03a (){
-		//User should be able to enter only letters in the "Enter Ciry or Airport" text-boxes
-
-		String locfromltr = typebyxpath (loc.locationfrom, val.tc03txtbxletters);
+		//User should be able to enter only letters in the "Enter Ciry or Airport" text-boxes		
+		typebyxpath (loc.locationfrom, val.tc03txtbxletters);
+		String locfromltr = textverification(loc.locationfrom);
+		
 		if (locfromltr==val.tc03txtbxletters){System.out.println("PASS: textbox#1 is active for letters");}
 		else                                 {System.out.println("FAIL: textbox#1 is NOT active for letters");}
 		
-		String loctoltr  = typebyxpath (loc.locationto, val.tc03txtbxletters);
+		typebyxpath (loc.locationto, val.tc03txtbxletters);
+		String loctoltr  = textverification(loc.locationto);
 		if (loctoltr==val.tc03txtbxletters)  {System.out.println("PASS: textbox#1 is active");}
 		else                                 {System.out.println("FAIL: textbox#2 is NOT active");}
 		
@@ -50,15 +53,17 @@ public class Bfirst2textbox extends config {
 	public void tc03b (){
 		//User should NOT be able to enter integer values in the "Enter Ciry or Airport" text-boxes
 
-		String locfromint = typebyxpath (loc.locationfrom, val.tc03txtbxinteger);
+		typebyxpath (loc.locationfrom, val.tc03txtbxinteger);
+		String locfromint = textverification (loc.locationfrom);
 		if (locfromint!=val.tc03txtbxinteger){System.out.println("PASS: textbox#1 is active for only letters");}
 		else                                 {System.out.println("FAIL: textbox#1 allows integers");}
 		
-		String loctoint   = typebyxpath (loc.locationto, val.tc03txtbxinteger);
+		typebyxpath (loc.locationto, val.tc03txtbxinteger);
+		String loctoint   = textverification (loc.locationto);
 		if (loctoint!=val.tc03txtbxinteger)  {System.out.println("PASS: textbox#1 is active for only letters");}
 		else                                 {System.out.println("FAIL: textbox#2 allows integers");}
 		
-		
+//		throw new SkipException ("This one is no longer needed");
 	}
 	
 
