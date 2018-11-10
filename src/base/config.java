@@ -1,6 +1,8 @@
 package base;
 
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
@@ -38,9 +40,9 @@ public class config extends webdriverfunctions {
 		
 		driver.get("https://www.phptravels.net/"); // open the browser
 		driver.manage().window().maximize(); // after opening, maximize the window
+		xpathclick (loc.flightstab);
 	//	driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.MILLISECONDS); // for loading pages with huge stress
 	//	driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS); // wait 30 seconds after maximizing to load all the necessary elements
-		xpathclick (loc.flightstab);
 		
 		
 	}

@@ -8,28 +8,16 @@ public class webdriverfunctions {
 	protected WebDriver driver ; 
 	
 	
-    public void typebyxpath(String loc, String value){
-		
-		driver.findElement(By.xpath(loc)).sendKeys(value);
-		
-		
-	}
+    public String typebyxpath(String loc, String val){
+    	driver.findElement(By.xpath(loc)).clear();
+    	driver.findElement(By.xpath(loc)).sendKeys(val);return val ;} 
 	
-	public void xpathclick (String loc){
-		
-		driver.findElement(By.xpath(loc)).click();
-		
-	}
+	public String xpathclick (String loc){driver.findElement(By.xpath(loc)).click();return loc;	}
 	
-	public String placeholdtext (String loc){
-		
-		return driver.findElement(By.xpath(loc)).getAttribute("placeholder");
-	}
+	public String placeholdtext (String loc){return driver.findElement(By.xpath(loc)).getAttribute("placeholder");}
 	
-	public boolean displayverification (String loc){
-		
-	    return driver.findElement(By.xpath(loc)).isDisplayed();
-		
-	}
+	public boolean displayverification (String loc){return driver.findElement(By.xpath(loc)).isDisplayed();}
 	
+	public String textverification (String loc){return driver.findElement(By.xpath(loc)).getAttribute("value");}
+
 }

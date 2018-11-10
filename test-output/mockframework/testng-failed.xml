@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [mockframework]">
+  <test thread-count="5" name="tests(failed)">
+    <classes>
+      <class name="tests.Bfirst2textbox">
+        <methods>
+          <include name="tc03b"/>
+          <include name="tc03a"/>
+          <include name="initialbrowsers"/>
+        </methods>
+      </class> <!-- tests.Bfirst2textbox -->
+      <class name="tests.Cdepart">
+        <methods>
+          <include name="tc04b"/>
+          <include name="tc04a"/>
+          <include name="initialbrowsers"/>
+        </methods>
+      </class> <!-- tests.Cdepart -->
+    </classes>
+  </test> <!-- tests(failed) -->
+</suite> <!-- Failed suite [mockframework] -->
