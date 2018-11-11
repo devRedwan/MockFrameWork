@@ -33,14 +33,14 @@ public class Cdepart extends config {
 	
 	@Test
 	public void tc04b(){
-	// User should NOT be able to enter letters in the "Depart", "Guests" text-fields
-//		typebyxpath (loc.departdate, val.tc03txtbxletters);
-//		String locdepartltr = textverification (loc.departdate);
-//		System.out.println(locdepartltr);
-//		System.out.println(val.tc03txtbxletters);
-//		if (locdepartltr==val.tc03txtbxletters){System.out.println("FAIL: depart textbox is active for letters");}
-//		else                                   {System.out.println("PASS: depart textbox is NOT active for letters");}
-//		
+// 	 User should NOT be able to enter letters in the "Depart", "Guests" text-fields
+		typebyxpath (loc.departdate, val.tc03txtbxletters);
+		String locdepartltr = textverification (loc.departdate);
+		System.out.println(locdepartltr);
+		System.out.println(val.tc03txtbxletters);
+		if (locdepartltr==val.tc03txtbxletters){System.out.println("FAIL: depart textbox is active for letters");}
+		else                                   {System.out.println("PASS: depart textbox is NOT active for letters");}
+		
 		typebyxpath (loc.passenger, val.tc03txtbxletters);
 	//	String locguestsltr  = textverification (loc.passenger);
 //		System.out.println(locdepartltr);
