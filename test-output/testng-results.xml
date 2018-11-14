@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18397" started-at="2018-11-11T15:56:42Z" finished-at="2018-11-11T15:57:01Z">
+  <suite name="Default suite" duration-ms="20425" started-at="2018-11-14T05:57:02Z" finished-at="2018-11-14T05:57:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18397" started-at="2018-11-11T15:56:42Z" finished-at="2018-11-11T15:57:01Z">
+    <test name="Default test" duration-ms="20425" started-at="2018-11-14T05:57:02Z" finished-at="2018-11-14T05:57:22Z">
       <class name="tests.Cdepart">
-        <test-method status="PASS" signature="initialbrowsers()[pri:0, instance:tests.Cdepart@523884b2]" name="initialbrowsers" is-config="true" duration-ms="17946" started-at="2018-11-11T15:56:42Z" finished-at="2018-11-11T15:57:00Z">
+        <test-method status="PASS" signature="initialbrowsers()[pri:0, instance:tests.Cdepart@523884b2]" name="initialbrowsers" is-config="true" duration-ms="19207" started-at="2018-11-14T05:57:02Z" finished-at="2018-11-14T05:57:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialbrowsers -->
-        <test-method status="PASS" signature="tc04b()[pri:0, instance:tests.Cdepart@523884b2]" name="tc04b" duration-ms="417" started-at="2018-11-11T15:57:00Z" finished-at="2018-11-11T15:57:01Z">
+        <test-method status="PASS" signature="tc04a()[pri:0, instance:tests.Cdepart@523884b2]" name="tc04a" duration-ms="652" started-at="2018-11-14T05:57:21Z" finished-at="2018-11-14T05:57:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04a -->
+        <test-method status="PASS" signature="tc04b()[pri:0, instance:tests.Cdepart@523884b2]" name="tc04b" duration-ms="534" started-at="2018-11-14T05:57:22Z" finished-at="2018-11-14T05:57:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc04b -->

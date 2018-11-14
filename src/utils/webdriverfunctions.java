@@ -23,19 +23,11 @@ public class webdriverfunctions {
 	
 	public boolean displayverification (String loc){return driver.findElement(By.xpath(loc)).isDisplayed();}
 	
-	public String textverification (String loc)
-	{return driver.findElement(By.xpath(loc)).getAttribute("value");}
+	public String textverification (String loc)	{return driver.findElement(By.xpath(loc)).getAttribute("value");}
 
 	public boolean txtverify(String loc, String value){
-		try{
-			assertEquals(Integer.parseInt(driver.findElement(By.xpath(loc)).getAttribute("value")), val);
-		
-		return true;
+		try                 {assertEquals(driver.findElement(By.xpath(loc)).getAttribute("value"), val); return true;}
+		catch (Throwable t) {System.out.println(t.getMessage()); return false;}
 	
-		}
-		catch(Throwable t){
-			System.out.println(t.getMessage());
-			return false;
-		}
 	}
 }
