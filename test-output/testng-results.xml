@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20425" started-at="2018-11-14T05:57:02Z" finished-at="2018-11-14T05:57:22Z">
+  <suite name="Default suite" duration-ms="18112" started-at="2018-11-18T17:25:47Z" finished-at="2018-11-18T17:26:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20425" started-at="2018-11-14T05:57:02Z" finished-at="2018-11-14T05:57:22Z">
+    <test name="Default test" duration-ms="18112" started-at="2018-11-18T17:25:47Z" finished-at="2018-11-18T17:26:05Z">
       <class name="tests.Cdepart">
-        <test-method status="PASS" signature="initialbrowsers()[pri:0, instance:tests.Cdepart@523884b2]" name="initialbrowsers" is-config="true" duration-ms="19207" started-at="2018-11-14T05:57:02Z" finished-at="2018-11-14T05:57:21Z">
+        <test-method status="PASS" signature="initialbrowsers1()[pri:0, instance:tests.Cdepart@5b275dab]" name="initialbrowsers1" is-config="true" duration-ms="17452" started-at="2018-11-18T17:25:47Z" finished-at="2018-11-18T17:26:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialbrowsers -->
-        <test-method status="PASS" signature="tc04a()[pri:0, instance:tests.Cdepart@523884b2]" name="tc04a" duration-ms="652" started-at="2018-11-14T05:57:21Z" finished-at="2018-11-14T05:57:22Z">
+        </test-method> <!-- initialbrowsers1 -->
+        <test-method status="PASS" signature="tc04a()[pri:0, instance:tests.Cdepart@5b275dab]" name="tc04a" duration-ms="633" started-at="2018-11-18T17:26:05Z" finished-at="2018-11-18T17:26:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc04a -->
-        <test-method status="PASS" signature="tc04b()[pri:0, instance:tests.Cdepart@523884b2]" name="tc04b" duration-ms="534" started-at="2018-11-14T05:57:22Z" finished-at="2018-11-14T05:57:22Z">
+        <test-method status="PASS" signature="initialbrowsers()[pri:0, instance:tests.Cdepart@5b275dab]" name="initialbrowsers" is-config="true" duration-ms="0" started-at="2018-11-18T17:26:05Z" finished-at="2018-11-18T17:26:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc04b -->
+        </test-method> <!-- initialbrowsers -->
       </class> <!-- tests.Cdepart -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
