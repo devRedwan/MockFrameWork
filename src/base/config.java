@@ -1,8 +1,11 @@
 package base;
 
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
@@ -12,37 +15,42 @@ import utils.webdriverfunctions;
 
 @SuppressWarnings("unused")
 public class config extends webdriverfunctions {
-
 	locators loc = new locators();
-	String browser = "firefox"; // Browser opening decider
-	
+
+	// Browser opening decider
+	String browser = "firefox"; 
+
 	@BeforeTest
-	public void initialbrowsers(){
-		
-		// Chrome Browser Opening
+	public void initialbrowsers1(){
+
+		// Open Chrome Browser 
 		if (browser.equalsIgnoreCase("chrome")){
-		
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver() ; 
-		
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
+			driver = new ChromeDriver(); 		
 		}
-		
-		// FireFox Browser Opening
+
+		// Open FireFox Browser 
 		if (browser.equalsIgnoreCase("firefox")){
-		
-		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\drivers\\geckodriver.exe");
-		driver = new FirefoxDriver();
-		
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\drivers\\geckodriver.exe");
+			driver = new FirefoxDriver();
 		}
-		
-		
-		driver.get("https://www.phptravels.net/"); // open the browser
-		driver.manage().window().maximize(); // after opening, maximize the window
-	//	driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.MILLISECONDS); // for loading pages with huge stress
-	//	driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS); // wait 30 seconds after maximizing to load all the necessary elements
+
+		// open the browser
+		driver.get("https://www.phptravels.net/"); 
+		// after opening, maximize the window
+		driver.manage().window().maximize();
+		// CLick on flights tab
 		xpathclick (loc.flightstab);
-		
-		
+
+		//	driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.MILLISECONDS); // for loading pages with huge stress
+		//	driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS); // wait 30 seconds after maximizing to load all the necessary elements
+
 	}
-	
+
+
+	@AfterTest
+	public void initialbrowsers(){
+        //after testing, quit the browsers
+		//driver.close();
+	}
 }
