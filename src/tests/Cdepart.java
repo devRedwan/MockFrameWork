@@ -14,13 +14,13 @@ public class Cdepart extends config {
 	@Test 
 	public void tc04a () throws InterruptedException{
 		//User should be able to enter integer values in the "Depart" & "Guests" text-boxes
-
-		typebyxpath (loc.departdate, val.tc03txtbxinteger); 
-		Thread.sleep(500);
-		String x = intverify(loc.departdate);
-		if (x!= val.tc03txtbxinteger){
-		System.out.println("FAILED: depart textbox is not active for integers");
-		}
+//
+//		typebyxpath (loc.departdate, val.tc03txtbxinteger); 
+//		Thread.sleep(500);
+//		String x = intverify(loc.departdate);
+//		if (x!= val.tc03txtbxinteger){
+//		System.out.println("FAILED: depart textbox is not active for integers");
+//		}
 
 		//		// visa
 		//		typebyxpath (loc.passenger, val.tc03txtbxinteger);

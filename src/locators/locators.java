@@ -8,7 +8,7 @@ public class locators {
 	public String locationfrom = "//*[@id='s2id_location_from']/a/span[1]"; 
     // 2nd text-box "Enter City or Airport" location from
 	public String locationto   = "//*[@id='s2id_location_to']/a/span[1]";    
-	// depart calendar date textbox
+	// depart calendar date text-box
 	public String departdate   = "//input[@placeholder='Depart']";            
 	// return calendar date text-box
 	public String returndate   = "//input[@placeholder='Return']";           
