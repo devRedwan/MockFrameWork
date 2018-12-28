@@ -15,9 +15,9 @@ public class locators {
 	// guests/passenger amount text-box
 	public String passenger    = "//input[@name='totalManualPassenger'][@placeholder='0']"; 
 	// one-way radio button under the 1st text-box
-	public String onewaybtn    = "//div[@role='tabpanel']/form/div[9]/div/div/div/input[@id='oneway']";
+	public String onewaybtn    = "//*[@id='flights']/form/div[9]/div[1]/div/div/ins";
 	// round trip radio button next to one-way
-	public String rndtrpbtn    = "//div[@role='tabpanel']/form/div[9]/div/div/div/input[@id='round']";  
+	public String rndtrpbtn    = "//*[@id='flights']/form/div[9]/div[2]/div/div/ins";  
 	// search button all the way to the right
 	public String srchbtn      = "//*[@id='flights']/form/div[6]/button";  
 }

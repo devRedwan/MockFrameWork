@@ -27,30 +27,36 @@ public class Ageneral extends config {
 		displayver[6] = displayverification(loc.rndtrpbtn);
 		displayver[7] = displayverification(loc.srchbtn);
 		
-		if (displayver[0]==true){System.out.println("PASS: 1st textbox is displayed");}
-		else                    {System.out.println("FAIL: 1st textbox is NOT displayed");}
-		
-		if (displayver[1]==true){System.out.println("PASS: 2nd textbox is displayed");}
-		else                    {System.out.println("FAIL: 2nd textbox is NOT displayed");}
-		
-		if (displayver[2]==true){System.out.println("PASS: 'Depart' textbox is displayed");}
-		else                    {System.out.println("FAIL: 'Depart' textbox is NOT displayed");}
-		
-		if (displayver[3]==true){System.out.println("PASS: 'Return' textbox is displayed");}
-		else                    {System.out.println("FAIL: 'Return' textbox is NOT displayed");}
-		
-		if (displayver[4]==true){System.out.println("PASS: 'Guests/Passengers' textbox is displayed");}
-		else                    {System.out.println("FAIL: 'Guests/Passengers' textbox is NOT displayed");}
-		
-		if (displayver[5]==true){System.out.println("PASS: 'One way' radio-button is displayed");}
-		else                    {System.out.println("FAIL: 'One way' radio-button is NOT displayed");}
-		
-		if (displayver[6]==true){System.out.println("PASS: 'Round trip' radio-button is displayed");}
-		else                    {System.out.println("FAIL: 'Round trip' radio-button is NOT displayed");}
-		
-		if (displayver[7]==true){System.out.println("PASS: 'Search' button is displayed");}
-		else                    {System.out.println("FAIL: 'Search' button is NOT displayed");} 
-		
-	}
+		if (displayver[0]!=true){
+			System.out.println("FALSE: 1st textbox is NOT displayed");
+			}
 	
+		if (displayver[1]!=true){
+			System.out.println("FALSE: 2nd textbox is NOT displayed");
+		}
+		
+		if (displayver[2]!=true){
+			System.out.println("FALSE: 'Depart' textbox is NOT displayed");
+		}
+		
+		if (displayver[3]!=true){
+			System.out.println("FALSE: 'Return' textbox is NOT displayed");
+			}
+		
+		if (displayver[4]!=true){
+			System.out.println("FALSE: 'Guests/Passengers' textbox is NOT displayed");
+			}
+		
+		if (displayver[5]!=true){
+			System.out.println("FALSE: 'One way' radio-button is NOT displayed");
+			}
+		
+		if (displayver[6]!=true){
+			System.out.println("FALSE: 'Round trip' radio-button is NOT displayed");
+			}
+		
+		if (displayver[7]!=true){
+			System.out.println("FALSE: 'Search' button is NOT displayed");
+			}
+	}	
 }

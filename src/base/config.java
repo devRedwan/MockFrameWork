@@ -18,7 +18,7 @@ public class config extends webdriverfunctions {
 	locators loc = new locators();
 
 	// Browser opening decider
-	String browser = "firefox"; 
+	String browser = "chrome"; 
 
 	@BeforeTest
 	public void initialbrowsers1(){
@@ -51,6 +51,6 @@ public class config extends webdriverfunctions {
 	@AfterTest
 	public void initialbrowsers(){
         //after testing, quit the browsers
-		//driver.close();
+		driver.close();
 	}
 }

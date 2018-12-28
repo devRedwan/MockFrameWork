@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Cdepart">
+      <class name="tests.Ageneral">
         <methods>
-          <include name="tc04b"/>
           <include name="initialbrowsers"/>
+          <include name="tc01"/>
+          <include name="initialbrowsers1"/>
         </methods>
-      </class> <!-- tests.Cdepart -->
+      </class> <!-- tests.Ageneral -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
